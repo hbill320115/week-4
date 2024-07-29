@@ -1,0 +1,90 @@
+.store{
+    
+    //門市據點-標題 
+    .h3{
+        text-align: start;
+        border-left:8px solid #9F1213;
+        margin-top: 96px;
+        @include pc-md{
+            margin-top: 80px;
+        }
+        @include phone{
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+    }
+
+    // 選擇地區label
+    .storeOption-title{
+        @include phone{
+            font-size: 16px;
+            margin-right: 8px;
+        }
+    }
+
+    // 下拉選單
+    .storeOption{
+        width: 304px;
+        height: 38px;
+        color: #495057;
+        font-size: 18px;
+        @include phone{
+            width: 248px;
+            margin-bottom: 24px;
+        }
+    }
+
+    //====== 卡片=========
+    .row{
+        @include phone{
+            margin-bottom: 64px;
+        }
+        .col{
+            width: 33.33333%;
+            @include pc-md{
+                width: 50%;
+            }
+            @include phone{
+                width: 100%;
+            }
+        }
+    }
+
+    // CARD間距
+    .card-margin{
+        margin-bottom: 48px;
+        @include pc-md{
+            margin-bottom: 24px;
+        }
+    }
+    .card-margin-md{
+        @include pc-md{
+            margin-bottom: 24px;
+        }
+    }
+    .store-card{
+        color: #212529;
+        border: 1px solid #00000020;
+        .store-name{
+            border: 1px solid #00000020;
+            padding: 8px 0px 8px 24px;
+        }
+        .store-content{
+            padding: 16px 24px;
+            .store-icon{
+                display: block;
+                font-size: 18px;
+                line-height: 30px;
+                margin-right: 11px;
+            }
+        }
+        a{
+            padding: 16px 0px;
+            font-size: 19px;
+            &:hover{
+                background: yellow;
+                color: #000;
+            }
+        }
+    }
+}

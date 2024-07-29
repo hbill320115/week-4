@@ -1,0 +1,22 @@
+@mixin pc-md{
+    @media (max-width:1296px) {
+        @content;
+    }
+}
+@mixin phone{
+    @media (max-width:696px) {
+        @content;
+    }
+}
+
+/* 字體 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import './reset';                  //CSS reset
+@import './style';                  //通用格式
+@import './layout/header.scss';    //header
+@import './layout/footer.scss';    //footer
+@import './pages/index.scss';      //首頁
+@import './pages/store';           //門市據點
+@import './pages/optical';         //賽璐珞鈦金屬混合鏡框

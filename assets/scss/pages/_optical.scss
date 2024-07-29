@@ -1,0 +1,111 @@
+
+//導覽列區 
+.nav-items{
+    width: 33.3333%;
+    border:1px solid #DCDCDC;
+    a{
+        padding: 24px 0px;
+        position: relative;
+        @include pc-md{
+            font-size: 24px;
+            padding: 16px 0px ;
+        }
+        @include phone{
+            font-size: 16px;
+        }
+    }
+    .under-line{
+        height: 8px;
+        background: #AA0601;
+    }
+}
+
+//banner
+.optical-banner{
+    @include phone{
+        margin-bottom: 40px;
+    }
+    .bg-img{
+        height: 296px;
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include phone{
+            height: 136px;
+        }
+    }
+    .bg-img-1{
+        background-image: url(/assets/images/optical/product-header-1.png);
+        @include pc-md{
+            background-image: url(/assets/images/optical/product-header-sm-1.png);
+        }
+    }
+    .bg-img-2{
+        background-image: url(/assets/images/optical/product-header-2.png);
+        @include pc-md{
+            background-image: url(/assets/images/optical/product-header-sm-2.png);
+        }
+    }
+}
+
+//產品卡片區 
+.celluloid-title{
+    font-size: 42px;
+}
+.celluloid{
+    h4{
+        @include phone{
+            font-size: 24px;
+        }
+    }
+    .col{
+        width: 25%;
+        @include pc-md{
+            width: 50%;
+        }
+        @include phone{
+            width: 100%;
+        }
+    }
+    .celluloid-card{
+        a{
+            color: #000;
+        }
+        margin-bottom: 80px;
+        @include pc-md{
+            margin-bottom: 40px;
+        }
+        @include phone{
+            margin-bottom: 24px;
+        }
+        .color-block{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+    }
+}
+
+// 頁數導覽
+.page{
+    .page-items{
+        border: 1px solid #555555;
+        a{
+            color: #555555;
+            padding: 12px;
+            font-size: 18px;
+            &:hover{
+                background: #F2F2F2;
+            }
+
+            @include phone{
+                font-size: 16px;
+            }
+        }
+    }
+    .stay a{
+        background: #000;
+        color: #fff;
+    }
+}

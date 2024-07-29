@@ -1,0 +1,40 @@
+
+.header{
+    .container{
+        @include phone{
+            display: none;
+        }
+    }
+    .pc-header{
+        .header-logo{
+            padding: 16px 0px;
+        }
+        a{
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+    .phone-header{
+        display: none;
+        @include phone{
+            display: block;
+        }
+        .header-logo{
+            padding: 16px 0px;
+        }
+        ul{
+            li{
+                width: 50%;
+                border: 1px solid #FFFFFF;
+                a{
+                    padding: 12px 0px;
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+
+            }
+        }
+    }
+}

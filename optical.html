@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Optical鏡框總覽</title>
+    <script type="module" crossorigin src="/week-4/assets/main-35323a50.js"></script>
+    <link rel="stylesheet" href="/week-4/assets/main-20a79609.css">
+  </head>
+  <body>
+    
+<header class="bg-danger header">
+    <!-- PC -->
+    <nav class="pc-header container d-flex jcsb aic">
+        <div class="header-logo">
+            <a href="#"><img src="data:image/png;base64,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" alt="logo"></a>
+        </div>
+        <ul class="d-flex aic fz-5">
+            <li><a href="/pages/optical.html" class="color-white">系列鏡框</a></li>
+            <li class="ml-16"><a href="/pages/store.html" class="color-white">門市據點</a></li>
+            <li class="ml-16"><a href="#" class="color-white">部落格</a></li>
+            <li class="ml-16"><a href="#" class="color-white">常見問題</a></li>
+        </ul>
+    </nav>
+
+    
+    <!-- phone -->
+    <nav class="phone-header d-flex">
+        <div class="header-logo">
+            <a href="#"><img src="data:image/png;base64,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" alt="logo"></a>
+        </div>
+        <ul class="d-flex flex-wrap text-center">
+            <li><a href="/pages/optical.html" class="color-white">系列鏡框</a></li>
+            <li><a href="/pages/store.html" class="color-white">門市據點</a></li>
+            <li><a href="#" class="color-white">部落格</a></li>
+            <li><a href="#" class="color-white">常見問題</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+    <!-- 導覽列 -->
+    <nav class="container">
+        <ul class="nav-full d-flex">
+            <li class="nav-items">
+                <a href="#" class="text-center color-black fz-8 fw-500">OPTICAL</a>
+                <div class="under-line"></div>
+            </li>
+            <li class="nav-items"><a href="#" class="text-center color-black fz-8 fw-500">SUNGLASSES</a></li>
+            <li class="nav-items"><a href="#" class="text-center color-black fz-8 fw-500">FUNCTIONAL</a></li>
+        </ul>
+    </nav>
+    <!-- banner -->
+    <div class="optical-banner d-flex jcc mb-20">
+        <div class="bg-img bg-img-1"></div>
+        <div class="bg-img bg-img-2"></div>
+    </div>
+
+    <!-- 產品區 -->
+    <div class="celluloid container mb-20">
+        <!-- 標題 -->
+        <div class="mb-8">
+            <h4 class="celluloid-title text-center fw-500">Celluloid Combi</h4>
+            <h4 class="fz-8 text-center">賽璐珞鈦金屬混合鏡框</h4>
+        </div>
+        <!-- 產品-卡片 -->
+        <ul class="celluloid-glasses row d-flex flex-wrap">
+            <!-- 1 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-1-662ad794.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 2 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-2-44439c2d.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 3 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-3-0fcb9ea9.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 4 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-4-3b774934.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 5 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-5-2f18dee7.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 6 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                <img src="/week-4/assets/product-6-06aeb50f.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 7 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-7-d12814bd.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 8 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-8-9da5a941.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 9 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-9-0e90356e.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 10 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-10-dc3e0f3f.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 11 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-11-0f8ac353.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+            <!-- 12 -->
+            <li class="celluloid-card col">
+                <a href="#">
+                    <img src="/week-4/assets/product-12-995bcd13.png" alt="glasses">
+                    <div class="celluloid-text d-flex jcsb">
+                        <p class="fz-6">BJ41600S</p>
+                        <p class="money fw-500 fz-6 color-AA0601">NTD3,490</p>
+                    </div>
+                    <div class="glasses-color d-flex">
+                        <div class="color-block mr-2" style="background: #5F3E2D;"></div>
+                        <div class="color-block" style="background: #B75929;"></div>
+                    </div>
+                </a>
+            </li>
+  
+        </ul>
+        <!-- 頁數導覽 -->
+        <ul class="page d-flex jcc">
+            <li class="page-items"><a href="#">上一頁</a></li>
+            <li class="page-items"><a href="#">1</a></li>
+            <li class="page-items stay"><a href="#">2</a></li>
+            <li class="page-items"><a href="#">3</a></li>
+            <li class="page-items"><a href="#">4</a></li>
+            <li class="page-items"><a href="#">5</a></li>
+            <li class="page-items"><a href="#">下一頁</a></li>
+        </ul>
+    </div>
+
+    
+    <footer class="footer bg-danger pt-12">
+    <div class="container d-flex pb-8">
+        <!--================= 左邊 ==========================-->
+
+        <div class="footer-left">
+            <!-- 頁面連結 -->
+            <ul class="footer-navbar">
+                <ul class="d-flex aic">
+                    <li class=" mr-12"><a href="#" class="color-white">首頁</a></li>
+                    <li class=" mr-12"><a href="#" class="color-white">系列鏡框</a></li>
+                    <li class=" mr-12"><a href="#" class="color-white">門市據點</a></li>
+                    <li class=" mr-12"><a href="#" class="color-white">部落格</a></li>
+                    <li><a href="#" class="color-white">常見問題</a></li>
+                </ul>
+            </ul>
+            <!-- 電話號碼 & mail -->
+            <ul class="phoneMail">
+                <li class="d-flex color-white">
+                <span class="material-symbols-outlined">call</span>
+                <a href="tel:0800-000-000"><p class="phoneMail-text fz-9 color-white">0800-000-000</p></a>
+                </li>
+
+                <li class="d-flex color-white">
+                <span class="material-symbols-outlined">mail</span>
+                <a href="mail:glasses@business.com"><p class="phoneMail-text fz-9 color-white">glasses@business.com</p></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ================= 右邊 ===================== -->
+        <ul class="footer-right d-flex ml-a">
+            <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt="fb" class="footer-icon"></a></li>
+
+            <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true" alt="ig" class="footer-icon"></a></li>
+            
+            <li><a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true" alt="line" class="footer-icon"></a></li>
+        </ul>
+    </div>
+    <!--====================== 分隔線以下 ===================== -->
+    <div class="end container pb-4">
+        <ul class="d-flex">
+            <li class="mr-a color-white d-flex aic">Copyright © 2020 Glasses.All rights reserved.</li>
+            <li class="mr-12"><a href="#" class="color-white end-text">隱私權政策</a></li>
+            <li><a href="#" class="color-white end-text">服務條款</a></li>
+        </ul>
+    </div>
+</footer>
+    
+  </body>
+</html>
